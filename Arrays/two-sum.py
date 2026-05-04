@@ -1,7 +1,4 @@
 def twoSum(nums: list[int], target: int) -> list[int]:
-    result = list()
-    for i in nums:
-        for j in nums:
-            if i + j == target and i != j:
-                result.extend([nums.index(i), nums.index(j)])
-                return result
+        num_dict = {enumerate(nums)}
+        return num_dict
+print(twoSum([2,7,11,15],9))
